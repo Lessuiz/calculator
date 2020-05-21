@@ -10,3 +10,12 @@ function divide(x, y) {
 function multiply(x, y) {
   return x * y
 }
+function operate(operator, x, y) {
+  const operators = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide
+  }
+  return operators[operator](x, y)
+}
