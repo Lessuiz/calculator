@@ -1,3 +1,16 @@
+const buttons = document.querySelectorAll(".numButton")
+let display = document.querySelector("#result")
+let value = "";
+
+//** Loop to create event listeners **//
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    value += button.textContent
+    display.textContent = value
+  })
+})
+
+//** Algebric functions **//
 function add(x, y) {
   return x + y
 }
@@ -10,6 +23,8 @@ function divide(x, y) {
 function multiply(x, y) {
   return x * y
 }
+
+
 function operate(operator, x, y) {
   const operators = {
     "+": add,
