@@ -1,11 +1,11 @@
-const buttons = document.querySelectorAll(".numButton")
+const numButtons = document.querySelectorAll(".numButton")
 let display = document.querySelector("#result")
 let value = "";
 
 //** Loop to create event listeners **//
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    value += button.textContent
+    value += numButton.textContent
     display.textContent = value
   })
 })
