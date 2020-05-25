@@ -47,6 +47,14 @@ function equalsFunction() {
   display.textContent = operate(operationsQuery[1], operationsQuery[0], operationsQuery[2])
 }
 
+function clearFucntion() {
+  operationsQuery = []
+  display.textContent = ""
+  previousResult.textContent = ""
+  value = ""
+}
+
+clearButton.addEventListener('click', clearFucntion)
 equalsButton.addEventListener('click', equalsFunction)
 
 
