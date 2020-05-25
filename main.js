@@ -6,8 +6,6 @@ const deleteButton = document.querySelector("#delete")
 let display = document.querySelector("#result")
 let previousResult = document.querySelector("#previous")
 let value = "";
-let num1 = 0
-let num2 = 0
 let operationsQuery = []
 
 //** Loop to create event listeners **//
