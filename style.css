@@ -24,14 +24,14 @@ body {
   background-color: var(--black);
   color: var(--font);
   text-align: right;
-  height: 55px;
 }
 #result {
   font-size: 20px;
-  padding-top: 7px;
+  height: 25px;
 }
 #previous {
   padding-top: 5px;
+  height: 35px;
 }
 #buttons {
   display: grid;
