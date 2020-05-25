@@ -45,6 +45,7 @@ function equalsFunction() {
   previousResult.textContent = ""
   operationsQuery.push(parseFloat(display.textContent))
   display.textContent = operate(operationsQuery[1], operationsQuery[0], operationsQuery[2])
+  operationsQuery = []
 }
 
 function clearFucntion() {
