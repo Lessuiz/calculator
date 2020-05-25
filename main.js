@@ -20,6 +20,7 @@ numButtons.forEach(button => {
 
 //** This function pushes inputs to the operation array **//
 function pushNumbers(e) {
+  if (display.textContent == "") return
   operationsQuery.push(parseInt(display.textContent))
   if (operationsQuery.length === 3) {
     operationsQuery.splice(0, 3, operate(operationsQuery[1], operationsQuery[0], operationsQuery[2]))
