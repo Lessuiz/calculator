@@ -21,7 +21,7 @@ numButtons.forEach(button => {
 //** This function pushes inputs to the operation array **//
 function pushNumbers(e) {
   if (display.textContent == "") return
-  operationsQuery.push(parseInt(display.textContent))
+  operationsQuery.push(parseFloat(display.textContent))
   if (operationsQuery.length === 3) {
     operationsQuery.splice(0, 3, operate(operationsQuery[1], operationsQuery[0], operationsQuery[2]))
     if (operationsQuery[0] == Infinity) {
@@ -43,7 +43,7 @@ operationButtons.forEach(button => {
 
 function equalsFunction() {
   previousResult.textContent = ""
-  operationsQuery.push(parseInt(display.textContent))
+  operationsQuery.push(parseFloat(display.textContent))
   display.textContent = operate(operationsQuery[1], operationsQuery[0], operationsQuery[2])
 }
 
