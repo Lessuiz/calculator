@@ -1,6 +1,6 @@
 const numButtons = document.querySelectorAll(".numButton")
 const operationButtons = document.querySelectorAll(".operation-button")
-const equalsButton = document.querySelectorAll("#equals")
+const equalsButton = document.querySelector("#equals")
 const clearButton = document.querySelector("#clear")
 const deleteButton = document.querySelector("#delete")
 let display = document.querySelector("#result")
@@ -39,6 +39,15 @@ function pushNumbers(e) {
 operationButtons.forEach(button => {
   button.addEventListener('click', pushNumbers)
 })
+
+function equalsFunction() {
+  previousResult.textContent = ""
+  operationsQuery.push(parseInt(display.textContent))
+  display.textContent = operate(operationsQuery[1], operationsQuery[0], operationsQuery[2])
+}
+
+equalsButton.addEventListener('click', equalsFunction)
+
 
 //** Algebric functions **//
 function add(x, y) {
