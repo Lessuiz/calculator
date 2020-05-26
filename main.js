@@ -58,26 +58,26 @@ equalsButton.addEventListener('click', equalsFunction)
 
 
 //** Algebric functions **//
-function add(x, y) {
-  return x + y
+function add(num1, num2) {
+  return num1 + num2
 }
-function subtract(x, y) {
-  return x - y
+function subtract(num1, num2) {
+  return num1 - num2
 }
-function divide(x, y) {
-  return x / y
+function divide(num1, num2) {
+  return num1 / num2
 }
-function multiply(x, y) {
-  return x * y
+function multiply(num1, num2) {
+  return num1 * num2
 }
 
 
-function operate(operator, x, y) {
+function operate(operator, num1, num2) {
   const operators = {
     "+": add,
     "-": subtract,
     "*": multiply,
     "/": divide
   }
-  return operators[operator](x, y)
+  return operators[operator](num1, num2)
 }
